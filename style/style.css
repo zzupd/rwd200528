@@ -1,0 +1,301 @@
+@charset "UTF-8";
+@import url("http://zzupd.dothome.co.kr/200528/cssReset/reset.css");
+
+/* 공통영역 시작 */
+* {
+    color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 공통영역 끝 */
+
+
+/* Guide Line */
+/*div#wrap {    border: 1px solid #000;    }*/
+/*
+div#srchByDate {
+    border: 1px solid #f00;
+}
+*/
+/*
+div#regTerm {
+    border: 1px solid #0f0;
+}
+*/
+/*
+div#regTermBtn {
+    border: 1px solid #00f;
+}
+*/
+/*
+main#freeBBS table {
+    border: 1px solid #aaa;
+}
+*/
+/*
+main#freeBBS #paging {
+    border: 1px solid #000;
+}
+*/
+/* Guide Line */
+
+
+
+
+/* div#wrap 시작 */
+div#wrap {
+    width: 860px;
+    margin: 10px auto;
+}
+/* div#wrap 끝 */
+
+
+
+/* header#header 시작 */
+
+header#header {
+    width: 840px;
+    margin: 20px auto;
+}
+
+div#srchByDate {
+
+    height: 80px;
+    line-height: 80px;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+}
+
+#srchByDate>div {
+    font-size: 14px;
+
+/*    flex: 1;*/
+}
+
+/*
+#srchByDate #regTerm span:first-child {
+    color: #09768b;
+    font-size: 8px;
+    font-weight: bold;
+}
+*/
+
+#srchByDate #regTerm {
+    width: 400px;
+}
+
+#srchByDate #regTerm::before {
+    content: "〉";
+    font-size: 8px;
+    font-weight: bold;
+}
+
+
+
+#srchByDate #regTerm span {
+    font-size: 15px;
+    font-weight: bold;
+}
+#srchByDate input {
+    width: 120px;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+#srchByDate #regTermBtn {
+    width: 440px;
+    text-align: right;
+}
+
+#srchByDate #regTermBtn button {
+    color: #fff;
+    font-size: 16px;
+/*    font-weight: bold;*/
+    padding: 4px 22px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3d7b0f;
+
+}
+
+div#srchByWord {
+    height: 90px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-top: 2px solid #09768b;
+
+    background-color: #f9f9f9;
+}
+
+#srchByWord>div#srchWordInner {
+    width: 724px;
+/*    border: 2px solid #f00;*/
+    margin: 22px auto;
+    display: inline-block;
+}
+#srchByWord>div#srchWordInner::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#srchByWord>div#srchWordInner>* {
+    float: left;
+}
+
+#srchByWord select {
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+}
+#srchByWord select::-ms-expand {
+    display : none;
+}
+#srchByWord select {
+    width: 140px;
+    padding: 12px;
+    background-image:url("../images/downArrow_01.png");
+    background-position: 110px center;
+    background-repeat: no-repeat;
+}
+#srchByWord select option {
+    font-size: 14px;
+}
+#srchByWord input[type=text] {
+    width: 500px;
+    padding: 13px 4px 14px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+}
+#srchByWord input[type=text]::placeholder {
+    color: #09768b;
+    font-weight: bold;
+    text-align: center;
+}
+#srchByWord button {
+    width: 80px;
+    color: #fff;
+    padding: 13px 12px;
+    border: none;
+    background-color: #09768b;
+
+}
+/* header#header 끝 */
+
+
+
+/* div#pageInfo 시작 */
+div#pageInfo {
+    width: 840px;
+    line-height: 26px;
+    padding: 24px;
+    border: 1px solid #ccc;
+    border-top: 2px solid #09768b;
+
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+div#pageInfo>p {
+    font-size: 12px;
+}
+
+div#pageInfo>p::before {
+    content: "-";
+}
+/* div#pageInfo 끝 */
+
+
+/* main#freeBBS 시작 */
+main#freeBBS {
+    width: 840px;
+    margin: 0 auto;
+}
+
+#freeBBS div#dataDisplay {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+#freeBBS div#dataDisplay>span {
+    font-size: 14px;
+}
+#freeBBS table {
+    width: 100%;
+    max-width: 840px;
+    border-top: ;
+    border-collapse: collapse;
+    border-top: 2px solid #3d7b0f;
+}
+
+#freeBBS table th,
+#freeBBS table td {
+    height: 46px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+
+}
+#freeBBS table td {
+    font-size: 14px;
+}
+#freeBBS table td:first-child {
+    text-align: center;
+}
+#freeBBS table td:nth-child(3)::after {
+    content: "**";
+}
+
+#freeBBS div#paging {
+    height: 60px;
+    text-align: center;
+}
+#freeBBS div#paging div#pagingInner {
+    width: 440px;
+    height: 28px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+#freeBBS div#paging div {
+    width: 28px;
+    height: 28px;
+    margin-right: 1px;
+
+    flex: 1;
+}
+#freeBBS div#paging div.pageNo {
+    line-height: 28px;
+}
+#freeBBS div#paging div.selected {
+    color: #fff;
+    background-color: #3d7b0f;
+}
+
+#freeBBS div#write {
+    text-align: right;
+}
+#freeBBS #writeBtn {
+    width: 160px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+
+    background-color: #3d7b0f;
+    display: inline-block;
+}
+/* main#freeBBS 끝 */
+
+
